@@ -1,0 +1,64 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to Glitch!</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <header>
+
+    </header>
+
+    <main>
+ <div class="container">
+  <div class="jumbotron">
+    <h1> API Basejump: Timestamp microservice</h1> 
+    <p>User stories:</p> 
+    <p>1) I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)</p> 
+  <p>2) If it does, it returns both the Unix timestamp and the natural language form of that date.</p> 
+   <p>3) If it does not contain a date or Unix timestamp, it returns null for those properties.</p> 
+    
+  </div>
+   <section>
+     <h4>Example usage:</h4>
+     <p class="example">https://timestamp-ms.herokuapp.com/December%2015,%202015</p>
+     <p class="example">https://timestamp-ms.herokuapp.com/1450137600</p>
+     <h4>Example output:</h4>
+     <p class="example">{ "unix": 1450137600, "natural": "December 15, 2015" }</p>
+   </section>
+  
+</div>    
+    </main>
+
+    <footer>
+      <a href="https://glitch.com">
+        Remix this in Glitch
+      </a>
+    </footer>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>
